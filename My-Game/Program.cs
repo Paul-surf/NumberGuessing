@@ -16,22 +16,22 @@ namespace My_Game
             Thread.Sleep(1500);
             Console.WriteLine("I'll give you 5 attempts");
             Thread.Sleep(1000);
+            Console.WriteLine("Now go guess!");
+            Thread.Sleep(1500);
 
             // Laver en DO-While loop for og have en gen-af-spil mulighed
             do {
             // Får et random tal
             Random random = new Random();
-            int randomNumber = random.Next(1,20);
-            
-            // Ændre navnet på random tal
-            int FavoriteNumber = randomNumber;
+            int FavoriteNumber = random.Next(1,20);
+
             // oprettelse af verfication af input & antal forsøg
             bool gameOver = false;
             int count = 0;
             int userGuess; 
             int attempts = 5;
 
-
+            Console.Clear();
             Console.WriteLine("Guess: ");
 
             while (!gameOver) {
@@ -60,7 +60,6 @@ namespace My_Game
                     gameOver = true;
                     Console.WriteLine("Yes! " + userGuess + " is my favorite number \nIt took you " + count + " attempts");
                 } 
-                
             }
             Console.WriteLine("Do you want to replay?");
             } while (Console.ReadLine().ToUpper() == "YES");
