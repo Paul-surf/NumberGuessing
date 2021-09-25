@@ -1,0 +1,5 @@
+# files and folders to be ignored by git
+
+# ignore build artifacts
+bin/
+obj/
