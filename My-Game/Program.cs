@@ -51,10 +51,10 @@ namespace My_Game
                     gameOver = true;
                 } 
                 else if (userGuess > FavoriteNumber) {
-                    Console.WriteLine("That's higher... Try again !");
+                    Console.WriteLine("it's lower... Try again !");
                 } 
                 else if (userGuess < FavoriteNumber) {
-                    Console.WriteLine("That's Lower... Try again !");
+                    Console.WriteLine("it's higher... Try again !");
                 } 
                 else {
                     gameOver = true;
